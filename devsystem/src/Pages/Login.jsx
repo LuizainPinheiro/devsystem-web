@@ -16,7 +16,7 @@ export default function Login() {
                     <label htmlFor='senha'>Senha</label>
                     <input type='password' id='senha' placeholder='Digite sua senha' />
                 </article>
-
+                
                 <button type='submit'>Entrar</button>
 
             </form>
