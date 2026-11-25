@@ -13,7 +13,20 @@ nav {
         &:hover {
             color: $secundary-color;
         }
-
         
+    }
+
+    .btn-sair {
+        background-color: $secundary-color;
+        color: $white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+            background-color: $color-hover;
+        }
     }
 }
