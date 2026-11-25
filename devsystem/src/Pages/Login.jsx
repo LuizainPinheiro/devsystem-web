@@ -14,7 +14,6 @@ export default function Login() {
 
        //Busca os usuarios na API
        const resposta = await axios.get("http://localhost:3000/users")
-       console.log(resposta)
 
        //Verifica se o usuario possui o email e senha correto
        const usuario = resposta.data.find((user) => {

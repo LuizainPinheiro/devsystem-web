@@ -1,4 +1,5 @@
-
+@use "./Abstracts/variables" as *;
+@use "./Abstracts/mixins" as *;
 .pessoas {
   h1 {
     color: #333;
@@ -11,17 +12,18 @@
 
     th, td {
       padding: 12px;
-      border: 1px solid #ddd;
+      border: 1px solid $border-color;
       text-align: left;
     }
 
     th {
-      background-color: #673ab7;
+      background-color: $primary-color;
       color: white;
     }
 
     tr:nth-child(even) {
-      background-color: #f2f2f2;
+      background-color: $color-hover;
+      color: white;
     }
   }
 
@@ -29,13 +31,13 @@
     padding: 10px 15px;
     margin-top: 20px;
     border: none;
-    background-color: #673ab7;
+    background-color: $primary-color;
     color: white;
     cursor: pointer;
     border-radius: 4px;
 
     &:hover {
-      background-color: #512da8;
+      background-color: $color-hover;
     }
 
     &:disabled {
@@ -47,4 +49,6 @@
   span {
     margin: 0 10px;
   }
+
+ 
 }
